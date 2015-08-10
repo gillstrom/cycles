@@ -1,6 +1,6 @@
 {
   "name": "cycles",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Calculate sleep cycles to wake up more refreshed.",
   "license": "MIT",
   "repository": "gillstrom/cycles",
