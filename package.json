@@ -1,0 +1,45 @@
+{
+  "name": "cycles",
+  "version": "0.0.0",
+  "description": "Calculate sleep cycles to wake up more refreshed.",
+  "license": "MIT",
+  "repository": "gillstrom/cycles",
+  "author": {
+    "name": "Andreas Gillström",
+    "email": "andreasgillstrom@gmail.com",
+    "url": "github.com/gillstrom"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && mocha"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "bedtime",
+    "calculate",
+    "cli-app",
+    "cli",
+    "cycle",
+    "cycles",
+    "night",
+    "sleep",
+    "time",
+    "times",
+    "wake"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "in-range": "^1.0.0",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "xo": "^0.5.2"
+  }
+}
