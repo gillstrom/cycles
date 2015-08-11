@@ -70,7 +70,7 @@ cycles.wake('06:55');
 Type: `string`  
 Default: Current time
 
-Returns an object with times for 2 to 7 sleep cycles.
+Returns an object with times to wake up for 2 to 7 sleep cycles.
 
 ### cycles.wake(times)
 
@@ -79,7 +79,7 @@ Returns an object with times for 2 to 7 sleep cycles.
 *Required*  
 Type: `string`
 
-Returns an object with times for 2 to 7 sleep cycles.
+Returns an object with times to fall asleep for 2 to 7 sleep cycles.
 
 
 ## License
