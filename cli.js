@@ -23,7 +23,7 @@ var cli = meow({
 	}
 });
 
-function sleep(obj, str, reverse) {
+function log(obj, str, reverse) {
 	var arr = Object.keys(obj).map(function (el) {
 		return '  ' + chalk.dim(el + ' cycles ') + chalk.bold(obj[el]);
 	});
@@ -37,8 +37,8 @@ function sleep(obj, str, reverse) {
 }
 
 if (cli.flags.wake) {
-	sleep(cycles.wake(cli.flags.wake), 'Fall asleep at the end of a cycle to feel more refreshed in the morning.', true);
+	log(cycles.wake(cli.flags.wake), 'Fall asleep at a certain time to feel more refreshed in the morning.', true);
 	return;
 }
 
-sleep(cycles.sleep(cli.input[0] || ''), 'Wake up at the end of a cycle to feel more refreshed in the morning.');
+log(cycles.sleep(cli.input[0] || ''), 'Wake up at the end of a cycle to feel more refreshed in the morning.');
