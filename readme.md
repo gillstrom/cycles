@@ -35,7 +35,7 @@ $ cycles --help
 ```js
 var cycles = require('cycles');
 
-cycles.sleep('06:55');
+cycles.sleep('23:37');
 /*
 	{
 		2: '02:37',
