@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import fn from './';
 
-test('Should return an object with times', function (t) {
+test('Should return an object with times', t => {
 	t.is(Object.keys(fn.sleep()).length, 6);
 
 	t.same(fn.sleep('23:00'), {
