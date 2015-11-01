@@ -38,7 +38,7 @@ function log(obj, str, reverse) {
 
 if (cli.flags.wake) {
 	log(cycles.wake(cli.flags.wake), 'Fall asleep at a certain time to feel more refreshed in the morning.', true);
-	return;
+	process.exit();
 }
 
 log(cycles.sleep(cli.input[0] || ''), 'Wake up at the end of a cycle to feel more refreshed in the morning.');
