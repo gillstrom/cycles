@@ -26,7 +26,7 @@ $ cycles --help
     $ cycles --wake <Time to wake up>
 
   Options
-    -d, --duration <Cycle duration>
+    -d, --duration <Cycle duration in minutes>
     -w, --wake <Time to wake up>
 ```
 
@@ -96,7 +96,7 @@ Options to pass to the function
 Type: `number`  
 Default: `90`
 
-Set the cycle duration.
+Set the cycle duration in minutes.
 
 ### cycles.wake(times, [opts])
 
@@ -118,7 +118,7 @@ Options to pass to the function
 Type: `number`  
 Default: `90`
 
-Set the cycle duration.
+Set the cycle duration in minutes.
 
 
 ## License
