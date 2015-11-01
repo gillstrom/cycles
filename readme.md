@@ -26,6 +26,7 @@ $ cycles --help
     $ cycles --wake <Time to wake up>
 
   Options
+    -d, --duration <Cycle duration>
     -w, --wake <Time to wake up>
 ```
 
@@ -58,12 +59,24 @@ cycles.wake('06:55');
 		7: '20:25'
 	}
 */
+
+cycles.wake('06:55', {duration: 60});
+/*
+	{
+		2: '04:55',
+		3: '03:55',
+		4: '02:55',
+		5: '01:55',
+		6: '00:55',
+		7: '23:55'
+	}
+*/
 ```
 
 
 ## API
 
-### cycles.sleep([time])
+### cycles.sleep([time], [opts])
 
 #### time
 
@@ -72,7 +85,20 @@ Default: Current time
 
 Returns an object with times to wake up for 2 to 7 sleep cycles.
 
-### cycles.wake(times)
+#### opts
+
+Type: `object`
+
+Options to pass to the function
+
+##### opts.duration
+
+Type: `number`  
+Default: `90`
+
+Set the cycle duration.
+
+### cycles.wake(times, [opts])
 
 #### time
 
@@ -80,6 +106,19 @@ Returns an object with times to wake up for 2 to 7 sleep cycles.
 Type: `string`
 
 Returns an object with times to fall asleep for 2 to 7 sleep cycles.
+
+#### opts
+
+Type: `object`
+
+Options to pass to the function
+
+##### opts.duration
+
+Type: `number`  
+Default: `90`
+
+Set the cycle duration.
 
 
 ## License
